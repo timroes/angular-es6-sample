@@ -52,7 +52,7 @@ gulp.task('scripts', ['jshint'], function() {
 
 	var sources = browserify({
 		entries: src.scripts.app,
-		debug: true
+		debug: true // Build source maps
 	})
 	.transform(babelify.configure({
 		// You can configure babel here!
