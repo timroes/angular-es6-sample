@@ -1,7 +1,7 @@
 To use this sample project you need gulp installed (`npm install -g gulp`).
 
-The default task will execute `grunt serve` which build the sources, watches for changes
-and serves them on port [4242](http://localhost:4242).
+The default task will execute `grunt serve` which build the sources, watch for changes
+and serve them on port [4242](http://localhost:4242).
 
 You will find several comments in the sources and build files and I wrote a
 [blog post](https://www.timroes.de/2015/07/29/using-ecmascript-6-es6-with-angularjs-1-x/) on
