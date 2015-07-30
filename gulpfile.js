@@ -91,4 +91,4 @@ gulp.task('watch', function() {
 })
 
 gulp.task('build', ['scripts', 'html', 'libs']);
-gulp.task('default', ['build', 'watch']);
+gulp.task('default', ['serve']);
