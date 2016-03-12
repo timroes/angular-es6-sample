@@ -5,14 +5,13 @@
   constructor if you would use a class.
 */
 
-export default function($scope, PersonService) {
-	'ngInject';
-	// ngAnnotate understand this string literal and annotates this method.
-	// Due to babels transformation you cannot use /*@ngInject*/ (what you can with classes)
-	// to annotate functions.
+export default class HomeController {
 
-	PersonService.getPerson().then(function(person) {
-		$scope.person = person;
-	});
+	/*@ngInject;*/
+	constructor(PersonService) {
+		PersonService.getPerson().then(person => {
+			this.person = person;
+		});
+	}
 
 }

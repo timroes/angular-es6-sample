@@ -3,9 +3,9 @@
 <head>
 	<title>Angular ES6 Sample</title>
 </head>
-<body ng-controller="HomeController">
+<body ng-controller="HomeController as ctrl">
 
-	Hello {{ person.name | upper }}!
+	Hello {{ ctrl.person.name | upper }}!
 
 	<script src="libs/angular.min.js"></script>
 	<script src="scripts/app.min.js"></script>
