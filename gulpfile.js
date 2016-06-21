@@ -57,6 +57,7 @@ gulp.task('scripts', ['jshint'], function() {
 	.transform(babelify.configure({
 		// You can configure babel here!
 		// https://babeljs.io/docs/usage/options/
+		presets: ["es2015"]
 	}));
 
 	return sources.bundle()
